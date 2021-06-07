@@ -11,3 +11,4 @@ Helper to setup a correct work station
 5. Clone this repo on ~/Work/toolchest
 6. Link .zshrc : `cd ~ ; ln -s ~/Work/toolchest/.zshrc`
 7. Setup Nord for iTerm2 : Preferences > Profiles > Colors > on "color presets" selector import Nord.itermcolors
+8. neovim (`brew install neovim`)
