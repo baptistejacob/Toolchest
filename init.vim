@@ -32,6 +32,8 @@ call plug#end()
 
 colorscheme nord
 
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+
 let mapleader = " "
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
