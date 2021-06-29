@@ -10,7 +10,11 @@ Helper to setup a correct work station
 4. Oh My Zsh (`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`)
 5. Clone this repo on ~/Work/toolchest
 6. Link .zshrc : `cd ~ ; ln -s ~/Work/toolchest/.zshrc`
-7. Setup Nord for iTerm2 : Preferences > Profiles > Colors > on "color presets" selector import Nord.itermcolors
-8. neovim 0.5 or greater (`brew install neovim`)
+7. Install brew dependencies : `brew bundle install --file ~/Work/toolchest/Brewfile`
+8. Setup Nord for iTerm2 : Preferences > Profiles > Colors > on "color presets" selector import Nord.itermcolors
 9. Install vim-plug
 10. Link init.vim : `mkdir ~/.config/nvim ; cd ~/.config/nvim ; ln -s ~/Work/toolchest/init.vim`
+
+## Daily operation
+
+- Save brew dependencies `cd ~/Work/toolchest ; brew bundle dump`
