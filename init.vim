@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'tpope/vim-fugitive'
 
 " telescope requirements...
 Plug 'nvim-lua/popup.nvim'
@@ -38,6 +39,11 @@ let mapleader = " "
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>gs :G<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gp :Gpush<CR>
+nnoremap <leader>gj :diffget //3<CR>
+nnoremap <leader>gf :diffget //2<CR>
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
