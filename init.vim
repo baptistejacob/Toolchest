@@ -18,12 +18,14 @@ set incsearch
 set scrolloff=8
 set colorcolumn=80
 set signcolumn=yes
+set noshowmode " remove diplay of the mode (useless with ligthline)
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-fugitive'
+Plug 'itchyny/lightline.vim'
 
 " telescope requirements...
 Plug 'nvim-lua/popup.nvim'
@@ -32,6 +34,16 @@ Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 colorscheme nord
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
