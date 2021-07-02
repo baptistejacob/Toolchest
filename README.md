@@ -14,6 +14,8 @@ Helper to setup a correct work station
 8. Setup Nord for iTerm2 : Preferences > Profiles > Colors > on "color presets" selector import Nord.itermcolors
 9. Install vim-plug
 10. Link init.vim : `mkdir ~/.config/nvim ; cd ~/.config/nvim ; ln -s ~/Work/toolchest/init.vim`
+11. Install python version via pyenv : `pyenv install 3.9.2`
+12. Set python version via pyenv : `pyenv global 3.9.2`
 
 ## Daily operation
 
