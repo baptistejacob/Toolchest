@@ -12,6 +12,3 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 alias vim="nvim"
-
-# virtualenv autoactivation
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
