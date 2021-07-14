@@ -12,3 +12,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 alias vim="nvim"
+
+# Autojump setup
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

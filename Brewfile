@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+brew "autojump"
 brew "htop"
 brew "neovim"
 brew "pyenv"
