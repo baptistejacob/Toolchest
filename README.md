@@ -17,6 +17,12 @@ Helper to setup a correct work station
 11. Install python version via pyenv : `pyenv install 3.9.2`
 12. Set python version via pyenv : `pyenv global 3.9.2`
 
+## Postgres
+
+- Create user: `createuser -s postgres`
+- Start postgres : `brew services start postgresql`
+- Stop postgres : `brew services stop postgresq`
+
 ## Daily operation
 
 - Save brew dependencies `cd ~/Work/toolchest ; brew bundle dump`
