@@ -13,7 +13,7 @@ Helper to setup a correct work station
 7. Install brew dependencies : `brew bundle install --file ~/Work/toolchest/Brewfile`
 8. Setup Nord for iTerm2 : Preferences > Profiles > Colors > on "color presets" selector import Nord.itermcolors
 9. Install vim-plug
-10. Link init.vim : `mkdir ~/.config/nvim ; cd ~/.config/nvim ; ln -s ~/Work/toolchest/init.vim`
+10. Link nvim config : `cd ~/.config ; ln -s ~/Work/toolchest/nvim`
 11. Install python version via pyenv : `pyenv install 3.9.2`
 12. Set python version via pyenv : `pyenv global 3.9.2`
 
