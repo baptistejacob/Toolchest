@@ -1,3 +1,5 @@
+let mapleader = " "
+
 set guicursor=
 set relativenumber
 set nu
@@ -47,7 +49,6 @@ let g:lightline = {
 
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
-let mapleader = " "
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
