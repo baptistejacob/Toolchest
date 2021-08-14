@@ -14,6 +14,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
 
+" Python
+    Plug 'numirias/semshi', {'for': 'python', 'do': ':UpdateRemotePlugins'} " Better python syntax highlight
+
 call plug#end()
 
 colorscheme nord
