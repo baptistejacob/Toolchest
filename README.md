@@ -6,12 +6,12 @@ Helper to setup a correct work station
 
 1. Google Chrome
 2. iTerm2
-3. brew (`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`)
-4. Oh My Zsh (`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`)
-5. Clone this repo on ~/Work/toolchest
-6. Link .zshrc : `cd ~ ; ln -s ~/Work/toolchest/.zshrc`
-7. Install brew dependencies : `brew bundle install --file ~/Work/toolchest/Brewfile`
-8. Setup Nord for iTerm2 : Preferences > Profiles > Colors > on "color presets" selector import Nord.itermcolors
+3. Setup iTerm2 : Preferences > Profiles then "other action" import profile `~/Work/toolchest/colibri.json` and set it as default
+4. brew (`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`)
+5. Oh My Zsh (`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`)
+6. Clone this repo on ~/Work/toolchest
+7. Link .zshrc : `cd ~ ; ln -s ~/Work/toolchest/.zshrc`
+8. Install brew dependencies : `brew bundle install --file ~/Work/toolchest/Brewfile`
 9. Install [vim-plug](https://github.com/junegunn/vim-plug)
 10. Link .config : `cd ~ ; ln -s ~/Work/toolchest/.config`
 11. Install python version via pyenv : `pyenv install 3.9.2`
