@@ -83,3 +83,7 @@ cnoremap <C-h> <Left>
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-l> <Right>
+
+" Python support setup
+let g:python_host_prog = "/Users/baptistejacob/.pyenv/shims/python" " which python
+let g:python3_host_prog = "/Users/baptistejacob/.pyenv/shims/python" " which python
