@@ -1,3 +1,5 @@
+let NERDTreeShowHidden=1 " Show hidden file in tree
+
 let NERDTreeIgnore=[
     \'\.git$',
     \'^__pycache__$'
