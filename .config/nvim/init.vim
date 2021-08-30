@@ -51,8 +51,16 @@ nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :NERDTreeFind<CR>
 
 " telescope remap
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+
+lua << EOF
+require('telescope').setup{
+    defaults = {
+        file_ignore_patterns = {".git"}
+    }
+}
+EOF
 
 " vim-fugitive remap
 nnoremap <leader>gs :G<CR>
