@@ -47,13 +47,5 @@ set expandtab       " Use tabs, not spaces
 set smartindent     " Do smart indenting at the begining of a new line
 %retab!             " Retabulate the whole file
 
-" Some vim plugin need python support (ex: black) and since this config is
-" used in a environment with pyenv we need to redefine the following with
-" python path (to get local python path run : which python)
-let g:python_host_prog = "/Users/baptistejacob/.pyenv/shims/python"
-let g:python3_host_prog = "/Users/baptistejacob/.pyenv/shims/python"
-
-" Automaticaly run python black on save
-autocmd BufWritePre *.py silent! execute ':Black'
-
 runtime ./maps.vim
+runtime ./python.vim
