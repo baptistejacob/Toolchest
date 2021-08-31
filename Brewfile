@@ -5,6 +5,8 @@ tap "homebrew/services"
 brew "autojump"
 brew "fd"
 brew "htop"
+brew "luajit"
+brew "tree-sitter"
 brew "neovim"
 brew "postgresql", restart_service: true
 brew "pyenv"
