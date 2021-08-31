@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'       " file tree
     Plug 'tpope/vim-fugitive'       " git inside vim
     Plug 'itchyny/lightline.vim'    " minimalist statusline
+    Plug 'neovim/nvim-lspconfig'    " automatically launch and initialize language servers
 
 " Telescope + requirements
     Plug 'nvim-lua/popup.nvim'
@@ -54,3 +55,5 @@ let g:python3_host_prog = "/Users/baptistejacob/.pyenv/shims/python"
 
 " Automaticaly run python black on save
 autocmd BufWritePre *.py silent! execute ':Black'
+
+runtime ./maps.vim
