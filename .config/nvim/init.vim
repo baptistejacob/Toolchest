@@ -46,10 +46,6 @@ set expandtab       " Use tabs, not spaces
 set smartindent     " Do smart indenting at the begining of a new line
 %retab!             " Retabulate the whole file
 
-" NERDTree remap
-nnoremap <silent> <C-n> :NERDTreeToggle<CR>
-nnoremap <silent> <C-f> :NERDTreeFind<CR>
-
 " telescope remap
 nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

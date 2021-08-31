@@ -5,6 +5,10 @@ let NERDTreeIgnore=[
     \'^__pycache__$'
     \]
 
+" NERDTree remap
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <C-f> :NERDTreeFind<CR>
+
 augroup NERDTreeAutoClose 
     autocmd!
 
