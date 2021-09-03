@@ -8,7 +8,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'       " file tree
     Plug 'tpope/vim-fugitive'       " git inside vim
     Plug 'itchyny/lightline.vim'    " minimalist statusline
-    Plug 'neovim/nvim-lspconfig'    " automatically launch and initialize language servers
+
+" LSP related
+    Plug 'neovim/nvim-lspconfig'        " automatically launch and initialize language servers
+    Plug 'kabouzeid/nvim-lspinstall'    " ease managment and instalation of language
 
 " Telescope + requirements
     Plug 'nvim-lua/popup.nvim'
