@@ -20,8 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-telescope/telescope.nvim'
 
 " Python
-    Plug 'numirias/semshi', {'for': 'python', 'do': ':UpdateRemotePlugins'} " Better python syntax highlight
-    Plug 'psf/black'                                                        " Black linter
+    Plug 'psf/black'    " Black linter
 
 call plug#end()
 
