@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
 " LSP related
     Plug 'neovim/nvim-lspconfig'        " automatically launch and initialize language servers
     Plug 'kabouzeid/nvim-lspinstall'    " ease managment and instalation of language
+    Plug 'glepnir/lspsaga.nvim'         " GUI for lsp
 
 " Telescope + requirements
     Plug 'nvim-lua/popup.nvim'
