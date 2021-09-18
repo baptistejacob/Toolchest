@@ -1,7 +1,3 @@
-if !exists('g:lspconfig')
-    finish
-endif
-
 lua << EOF
 require'lspinstall'.setup()
 local nvim_lsp = require('lspconfig')
@@ -42,9 +38,9 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local servers = require'lspinstall'.installed_servers()
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-  }
+for _, server in pairs(servers) do
+    require'lspconfig'[server].setup {
+        on_attach = on_attach,
+    }
 end
 EOF
