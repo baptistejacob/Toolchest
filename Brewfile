@@ -13,4 +13,5 @@ brew "neovim"
 brew "node"
 brew "postgresql", restart_service: true
 brew "pyenv"
+brew "rbenv"
 brew "ripgrep"
