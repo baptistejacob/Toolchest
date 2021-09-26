@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 brew "autojump"
@@ -15,3 +16,4 @@ brew "postgresql", restart_service: true
 brew "pyenv"
 brew "rbenv"
 brew "ripgrep"
+cask "font-3270-nerd-font"
