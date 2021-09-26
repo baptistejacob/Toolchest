@@ -4,10 +4,11 @@ let mapleader = " "
 call plug#begin('~/.vim/plugged')
 
 " General purpose
-    Plug 'arcticicestudio/nord-vim' " colorscheme
-    Plug 'preservim/nerdtree'       " file tree
-    Plug 'tpope/vim-fugitive'       " git inside vim
-    Plug 'itchyny/lightline.vim'    " minimalist statusline
+    Plug 'arcticicestudio/nord-vim'     " colorscheme
+    Plug 'preservim/nerdtree'           " file tree
+    Plug 'tpope/vim-fugitive'           " git inside vim
+    Plug 'itchyny/lightline.vim'        " minimalist statusline
+    Plug 'kyazdani42/nvim-web-devicons' " custome icon for file
 
 " LSP related
     Plug 'neovim/nvim-lspconfig'        " automatically launch and initialize language servers
