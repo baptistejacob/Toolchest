@@ -16,4 +16,4 @@ brew "postgresql", restart_service: true
 brew "pyenv"
 brew "rbenv"
 brew "ripgrep"
-cask "font-3270-nerd-font"
+cask "font-anonymice-nerd-font"
