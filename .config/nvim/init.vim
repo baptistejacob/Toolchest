@@ -53,3 +53,4 @@ set smartindent     " Do smart indenting at the begining of a new line
 
 runtime ./maps.vim
 runtime ./python.vim
+runtime ./ruby.vim
