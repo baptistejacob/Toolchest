@@ -10,7 +10,7 @@ saga.init_lsp_saga {
     code_action_icon = ' ',
     finder_definition_icon = '  ',
     finder_reference_icon = '  ',
-    definition_preview_icon = '  '
+    definition_preview_icon = '  ',
     border_style = "round",
 }
 
