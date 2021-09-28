@@ -7,8 +7,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'arcticicestudio/nord-vim'     " colorscheme
     Plug 'preservim/nerdtree'           " file tree
     Plug 'tpope/vim-fugitive'           " git inside vim
-    Plug 'itchyny/lightline.vim'        " minimalist statusline
-    Plug 'kyazdani42/nvim-web-devicons' " custome icon for file
+    Plug 'hoob3rt/lualine.nvim'         " lua statusline
 
 " LSP related
     Plug 'neovim/nvim-lspconfig'        " automatically launch and initialize language servers
@@ -22,6 +21,10 @@ call plug#begin('~/.vim/plugged')
 
 " Python
     Plug 'psf/black'    " Black linter
+
+" Custom icon for various plugin (status line / lsp / ect ...
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
