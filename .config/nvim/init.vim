@@ -55,6 +55,18 @@ set expandtab       " Use tabs, not spaces
 set smartindent     " Do smart indenting at the begining of a new line
 %retab!             " Retabulate the whole file
 
+:augroup number_toggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
+:augroup number_color_toggle
+    autocmd!
+    autocmd InsertEnter * highlight LineNr ctermbg=yellow guifg=#A3BE8C
+    autocmd InsertLeave * highlight LineNr ctermbg=black guifg=#4C566A
+:augroup END
+
 runtime ./maps.vim
 runtime ./python.vim
 runtime ./ruby.vim
