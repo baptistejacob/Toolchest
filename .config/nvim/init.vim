@@ -20,9 +20,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
 
-" Python
-    Plug 'psf/black'    " Black linter
-
 " Custom icon for various plugin (status line / lsp / ect ...)
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
