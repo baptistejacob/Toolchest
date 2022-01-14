@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " LSP related
     Plug 'neovim/nvim-lspconfig'                                " automatically launch and initialize language servers
-    Plug 'kabouzeid/nvim-lspinstall'                            " ease managment and instalation of language
+    Plug 'williamboman/nvim-lsp-installer'                      " ease managment and instalation of language
     Plug 'glepnir/lspsaga.nvim'                                 " GUI for lsp
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Simple interface for treesitter inside vim
 
@@ -23,7 +23,7 @@ call plug#begin('~/.vim/plugged')
 " Python
     Plug 'psf/black'    " Black linter
 
-" Custom icon for various plugin (status line / lsp / ect ...
+" Custom icon for various plugin (status line / lsp / ect ...)
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
 

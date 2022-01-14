@@ -1,5 +1,5 @@
 lua << EOF
-require'lspinstall'.setup()
+local lsp_installer = require("nvim-lsp-installer")
 local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
@@ -35,12 +35,8 @@ local on_attach = function(client, bufnr)
 
 end
 
--- Use a loop to conveniently call 'setup' on multiple servers and
--- map buffer local keybindings when the language server attaches
-local servers = require'lspinstall'.installed_servers()
-for _, server in pairs(servers) do
-    require'lspconfig'[server].setup {
-        on_attach = on_attach,
-    }
-end
+lsp_installer.on_server_ready(function(server)
+    local opts = {}
+    server:setup(opts)
+end)
 EOF
