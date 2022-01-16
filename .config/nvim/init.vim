@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'kyazdani42/nvim-tree.lua'     " file tree
     Plug 'tpope/vim-fugitive'           " git inside vim
     Plug 'hoob3rt/lualine.nvim'         " lua statusline
+    Plug 'dense-analysis/ale'           " linting
 
 " LSP related
     Plug 'neovim/nvim-lspconfig'                                " automatically launch and initialize language servers
