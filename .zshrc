@@ -15,6 +15,3 @@ alias vim="nvim"
 
 # Autojump setup
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-# rbenv autostart
-eval "$(rbenv init -)"
