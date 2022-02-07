@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'           " git inside vim
     Plug 'hoob3rt/lualine.nvim'         " lua statusline
     Plug 'dense-analysis/ale'           " linting
+    Plug 'vim-test/vim-test'            " run test
 
 " LSP related
     Plug 'neovim/nvim-lspconfig'                                " automatically launch and initialize language servers
