@@ -4,7 +4,7 @@ let mapleader = " "
 call plug#begin('~/.vim/plugged')
 
 " General purpose
-    Plug 'arcticicestudio/nord-vim'     " colorscheme
+    Plug 'shaunsingh/nord.nvim'         " colorscheme
     Plug 'kyazdani42/nvim-tree.lua'     " file tree
     Plug 'tpope/vim-fugitive'           " git inside vim
     Plug 'hoob3rt/lualine.nvim'         " lua statusline
