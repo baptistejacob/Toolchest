@@ -54,7 +54,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch       " highlight word found by search
 set scrolloff=8     " keep cursor 8 line from top or botom (keep it more center)
-set colorcolumn=80  " color column 80 let's try to keep things shord
+set colorcolumn=120  " color column 80 let's try to keep things shord
 set signcolumn=yes  " sign column for linter or other usage
 set termguicolors   " this variable must be enabled for colors to be applied properly
 
