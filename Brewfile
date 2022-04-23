@@ -13,6 +13,7 @@ brew "luv"
 brew "tree-sitter"
 brew "neovim"
 brew "node"
+brew "nvm"
 brew "postgresql", restart_service: true
 brew "pyenv"
 brew "python@3.9"

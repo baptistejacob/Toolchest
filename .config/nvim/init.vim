@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'hoob3rt/lualine.nvim'         " lua statusline
     Plug 'dense-analysis/ale'           " linting
     Plug 'vim-test/vim-test'            " run test
+    Plug 'github/copilot.vim'           " pair programming AI
 
 " LSP related
     Plug 'neovim/nvim-lspconfig'                                " automatically launch and initialize language servers
