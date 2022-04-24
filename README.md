@@ -26,3 +26,4 @@ Helper to setup a correct work station
 ## Daily operation
 
 - Save brew dependencies `cd ~/Work/toolchest ; brew bundle dump`
+- New lsp in vim `LspInstall <lang>` then `TSInstall <lang>`
