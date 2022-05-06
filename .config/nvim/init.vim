@@ -14,7 +14,6 @@ call plug#begin('~/.vim/plugged')
 " LSP related
     Plug 'neovim/nvim-lspconfig'                                " automatically launch and initialize language servers
     Plug 'williamboman/nvim-lsp-installer'                      " ease managment and instalation of language
-    Plug 'glepnir/lspsaga.nvim'                                 " GUI for lsp
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Simple interface for treesitter inside vim
 
 " Telescope + requirements
