@@ -1,26 +1,24 @@
-set completeopt=menu,menuone,noselect
+set completeopt=menu,menuone    " Diplay completion menu
 
 lua << EOF
   local cmp = require'cmp'
 
   cmp.setup({
+    -- Snippet engine : This is require for cmp to work
     snippet = {
-      -- REQUIRED - you must specify a snippet engine
       expand = function(args)
         vim.fn["vsnip#anonymous"](args.body)
       end,
     },
+
+    -- Mapping
     mapping = {
-      ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
-      ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-      ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-      ['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-      ['<C-e>'] = cmp.mapping({
-        i = cmp.mapping.abort(),
-        c = cmp.mapping.close(),
-      }),
-      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+      ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item.
+      ['<C-n>'] = cmp.mapping.select_next_item(),         -- Next suggestion
+      ['<C-b>'] = cmp.mapping.select_prev_item(),         -- Prev suggestion
     },
+
+    -- Config
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'vsnip' },
@@ -29,25 +27,21 @@ lua << EOF
     })
   })
 
-  -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+  -- Setup cmp for / search
   cmp.setup.cmdline('/', {
-    sources = {
-      { name = 'buffer' }
-    }
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {{ name = 'buffer' }}
   })
 
-  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+  -- Setup cmp for command
   cmp.setup.cmdline(':', {
-    sources = cmp.config.sources({
-      { name = 'path' }
-    }, {
-      { name = 'cmdline' }
-    })
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({{ name = 'path' }}, {{ name = 'cmdline' }})
   })
 
   -- Setup lspconfig.
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+  -- Do not forget to add lsp to the following list for cmp to work
   require('lspconfig')['pylsp'].setup {
     capabilities = capabilities
   }
