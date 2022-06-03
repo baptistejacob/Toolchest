@@ -21,9 +21,3 @@ cnoremap <C-h> <Left>
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-l> <Right>
-
-" Move code faster
-nmap <C-w> <cmd>:m .-2<CR>==
-nmap <C-s> <cmd>m .+1<CR>==
-nmap <C-a> <cmd><<<CR>
-nmap <C-d> <cmd>>><CR>
